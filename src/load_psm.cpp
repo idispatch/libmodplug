@@ -15,6 +15,8 @@
 
 //#define PSM_LOG
 
+#pragma GCC diagnostic ignored "-Wunused-but-set-variable"
+
 #define PSM_ID_NEW	0x204d5350
 #define PSM_ID_OLD	0xfe4d5350
 #define IFFID_FILE	0x454c4946

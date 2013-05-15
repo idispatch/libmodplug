@@ -45,6 +45,9 @@ typedef UWORD WORD;
 
 #include "load_pat.h"
 
+#pragma GCC diagnostic ignored "-Wsign-compare"
+#pragma GCC diagnostic ignored "-Wunused-function"
+
 #define MAXABCINCLUDES	8
 #define MAXCHORDNAMES 80
 #define ABC_ENV_DUMPTRACKS		"MMABC_DUMPTRACKS"

@@ -15,6 +15,8 @@
 #pragma warning(disable:4244)
 #endif
 
+#pragma GCC diagnostic ignored "-Wunused-but-set-variable"
+
 BYTE autovibit2xm[8] =
 { 0, 3, 1, 4, 2, 0, 0, 0 };
 

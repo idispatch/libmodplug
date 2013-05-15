@@ -53,6 +53,8 @@ typedef UWORD WORD;
 
 #include "load_pat.h"
 
+#pragma GCC diagnostic ignored "-Wsign-compare"
+
 #ifdef MSC_VER
 #define DIRDELIM		'\\'
 #define TIMIDITYCFG	"C:\\TIMIDITY\\TIMIDITY.CFG"

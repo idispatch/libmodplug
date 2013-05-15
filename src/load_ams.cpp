@@ -12,6 +12,9 @@
 
 //#pragma warning(disable:4244)
 
+#pragma GCC diagnostic ignored "-Wunused-function"
+#pragma GCC diagnostic ignored "-Wunused-but-set-variable"
+
 #pragma pack(1)
 
 typedef struct AMSFILEHEADER
