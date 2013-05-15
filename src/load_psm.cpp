@@ -13,9 +13,9 @@
 #include "stdafx.h"
 #include "sndfile.h"
 
-//#define PSM_LOG
-
+#ifdef __GNUC__
 #pragma GCC diagnostic ignored "-Wunused-but-set-variable"
+#endif
 
 #define PSM_ID_NEW	0x204d5350
 #define PSM_ID_OLD	0xfe4d5350

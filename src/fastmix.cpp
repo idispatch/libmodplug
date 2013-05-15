@@ -13,7 +13,9 @@
 #pragma bss_seg(".modplug")
 #endif
 
+#ifdef __GNUC__
 #pragma GCC diagnostic ignored "-Wunused-but-set-variable"
+#endif
 
 // Front Mix Buffer (Also room for interleaved rear mix)
 int MixSoundBuffer[MIXBUFFERSIZE*4];

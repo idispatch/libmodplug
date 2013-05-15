@@ -45,8 +45,10 @@ typedef UWORD WORD;
 
 #include "load_pat.h"
 
+#ifdef __GNUC__
 #pragma GCC diagnostic ignored "-Wsign-compare"
 #pragma GCC diagnostic ignored "-Wunused-function"
+#endif
 
 #define MAXABCINCLUDES	8
 #define MAXCHORDNAMES 80

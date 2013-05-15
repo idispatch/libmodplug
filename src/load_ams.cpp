@@ -10,10 +10,10 @@
 #include "stdafx.h"
 #include "sndfile.h"
 
-//#pragma warning(disable:4244)
-
+#ifdef __GNUC__
 #pragma GCC diagnostic ignored "-Wunused-function"
 #pragma GCC diagnostic ignored "-Wunused-but-set-variable"
+#endif
 
 #pragma pack(1)
 

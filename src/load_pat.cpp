@@ -53,7 +53,9 @@ typedef UWORD WORD;
 
 #include "load_pat.h"
 
+#ifdef __GNUC__
 #pragma GCC diagnostic ignored "-Wsign-compare"
+#endif
 
 #ifdef MSC_VER
 #define DIRDELIM		'\\'
