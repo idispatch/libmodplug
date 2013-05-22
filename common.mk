@@ -7,13 +7,10 @@ QCONFIG=qconfig.mk
 endif
 include $(QCONFIG)
 
-define PINFO
-PINFO DESCRIPTION = SDL_mixer
-endef
-
 USEFILE=
-
-EXTRA_SRCVPATH += $(PROJECT_ROOT)/src $(PROJECT_ROOT)/src/libmodplug
+NAME=modplug
+EXTRA_INCVPATH += $(PROJECT_ROOT)/src/libmodplug
+EXTRA_SRCVPATH += $(PROJECT_ROOT)/src
 CCFLAGS += -D__BLACKBERRY__ -D__BB10__ -D__QNXNTO__ -DHAVE_CONFIG_H=1
 
 include $(MKFILES_ROOT)/qmacros.mk

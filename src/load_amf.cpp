@@ -101,7 +101,9 @@ VOID AMF_Unpack(MODCOMMAND *pPat, const BYTE *pTrack, UINT nRows, UINT nChannels
 			// 0x0A: Tone Porta + Vol Slide
 			// 0x0B: Vibrato + Vol Slide
 			case 0x02:	command = CMD_VOLUMESLIDE;
+			/* no break */
 			case 0x0A:	if (command == 0x0A) command = CMD_TONEPORTAVOL;
+			/* no break */
 			case 0x0B:	if (command == 0x0B) command = CMD_VIBRATOVOL;
 						if (param & 0x80) param = (-(signed char)param)&0x0F;
 						else param = (param&0x0F)<<4;
@@ -148,6 +150,7 @@ VOID AMF_Unpack(MODCOMMAND *pPat, const BYTE *pTrack, UINT nRows, UINT nChannels
 			case 0x17:	param = (param+64)&0x7F;
 						if (m->command) { if (!m->volcmd) { m->volcmd = VOLCMD_PANNING;  m->vol = param/2; } command = 0; }
 						else { command = CMD_PANNING8; }
+						/* no break */
 			// Unknown effects
 			default:	command = param = 0;
 			}

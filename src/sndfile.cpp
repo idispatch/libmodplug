@@ -773,6 +773,7 @@ UINT CSoundFile::GetSaveFormats() const
 	switch(m_nType)
 	{
 	case MOD_TYPE_MOD:	n = MOD_TYPE_MOD;
+	/* no break */
 	case MOD_TYPE_S3M:	n = MOD_TYPE_S3M;
 	}
 	n |= MOD_TYPE_XM | MOD_TYPE_IT;
